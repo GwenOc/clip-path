@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  margin:0;
+  font-family: 'Poppins', sans-serif;
+}
+
+section h1 {
+  font-size:32px;
+  text-align: center;
+}
+
+section {
+  padding:320px 32px;
+  color:white;
+}
+
+
+.first {
+  background-image:url('https://images.unsplash.com/photo-1483884105135-c06ea81a7a80?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size:cover;
+  background-position: center center;
+}
+
+
+
+.second {
+  background-image:url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+  background-size:cover;
+  color:white;
+  -webkit-clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+  margin:-100px 0px;
+  transition: clip-path .4s;
+}
+
+.second:hover {
+  -webkit-clip-path: polygon(0 100px, 100% 0, 100% calc(100% - 100px), 0 100%);
+  clip-path: polygon(0 100px, 100% 0, 100% calc(100% - 100px), 0 100%);
+}
+
+
+
+.third {
+  background-color: black;
+}
+

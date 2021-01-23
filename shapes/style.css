@@ -1,0 +1,70 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  background-image:url('assets/background.png');
+  background-repeat: repeat;
+}
+
+h3 {
+  color:#999;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 13px;;
+}
+main {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height:100vh;
+}
+
+
+
+.hexagon {
+  font-weight: 900;
+  width:400px;
+  height:400px;
+  background:#ececec;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor:pointer;
+  -webkit-clip-path: polygon(85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
+  clip-path: polygon(85% 0, 100% 50%, 85% 100%, 15% 100%, 0 50%, 15% 0);
+  transition: clip-path .4s;
+}
+
+.hexagon:hover {
+  -webkit-clip-path: polygon(95% 0, 85% 50%, 95% 100%, 5% 100%, 15% 49%, 5% 0);
+clip-path: polygon(95% 0, 85% 50%, 95% 100%, 5% 100%, 15% 49%, 5% 0);
+}
+
+
+.hexagon--small {
+  width:250px;
+  height: 250px;
+}
+
+.hexagon--small:hover {
+  -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+
+.profile {
+  background-image: url('assets/wawa.jpg');
+  background-size: cover;
+  background-position: top center;
+}
+
+.work {
+  margin-top:64px;
+  background-color:#121212;
+  color:white;
+} 
+
